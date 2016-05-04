@@ -188,36 +188,18 @@ public class Task {
     }
 
 
-    double HeroSqrt(int arg) {
-        String temp = arg + "";
-        int argLength = temp.length();
-        int power = argLength / 2;
-        double powerTen = 1;
 
-        for (int i = 1; i <= power; i++) {
-            powerTen = powerTen * 10;
+
+    // Makes a root calculator for a given number
+    // double number is the number from which we extract the square root
+    double HerosMethod(double number) {
+        double result = number / 2;
+
+        // The input will be iterated 25 times
+        for (int i = 1; i <= 25; i++) {
+            result = (result + (number / result)) / 2.0;
         }
-        return estimationFormula(argLength * powerTen, arg);
-    }
-
-    /*
-    * Formula result
-    * Calculates gNew = (gOld + x / gOld) / 2 with recursion
-    * x1 is gOld
-    * div is arg / x1
-     */
-    double estimationFormula(double x1, int arg)
-    {
-        double result = x1;
-        double result1 = 0.0;
-        double div = arg / x1;
-
-        result1 = (x1 + div) / 2;
-        if (Double.compare(result1, result) != 0) {
-            result = result1;
-            return estimationFormula(result1,  arg);
-        }
-        else return result;
+        return result;
     }
 
 }

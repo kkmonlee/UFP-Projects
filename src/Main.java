@@ -6,8 +6,10 @@ public class Main {
 
         Task theTask = new Task();
 
-        double sqrt = theTask.HeroSqrt(125348);
-        System.out.println("Square root: " + sqrt);
+        System.out.println("Enter the number you want the square root of: ");
+        Scanner input = new Scanner(System.in);
+
+        System.out.println(theTask.HerosMethod(input.nextDouble()));
 
     }
 }
