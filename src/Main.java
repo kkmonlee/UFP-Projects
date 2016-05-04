@@ -6,7 +6,8 @@ public class Main {
 
         Task theTask = new Task();
 
-        theTask.HerosMethod();
+        double sqrt = theTask.HeroSqrt(125348);
+        System.out.println("Square root: " + sqrt);
 
     }
 }

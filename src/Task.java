@@ -187,37 +187,37 @@ public class Task {
 
     }
 
-    void HerosMethod()
-    {
-        Scanner input = new Scanner(System.in);
-        final double epsilon = 1e-14; // amount of precision
-        double x;       // square root of x
-        double root;    // current estimate of sqrt(x)
-        double lroot;   // last estimate of sqrt(x)
 
-        // read x
-        do {
-            System.out.println("Enter the number: ");
-            x = input.nextDouble();
+    double HeroSqrt(int arg) {
+        String temp = arg + "";
+        int argLength = temp.length();
+        int power = argLength / 2;
+        double powerTen = 1;
 
-            if (x < 0) {
-                System.out.println("No real results.\n");
-                System.out.println("Please enter a positive number. \n");
-            }
-        } while (x < 0);
-
-        // Hero's Method
-        root = 3.0; lroot = x;
-
-        while (Math.abs(root - lroot) > epsilon) {
-            lroot = root;
-            root = (root + x / root) / 2.0;
+        for (int i = 1; i <= power; i++) {
+            powerTen = powerTen * 10;
         }
+        return estimationFormula(argLength * powerTen, arg);
+    }
 
-        System.out.println("Square root of x = " + root + "\n");
-        System.out.println("Math.sqrt(x) = " + Math.sqrt(x));
+    /*
+    * Formula result
+    * Calculates gNew = (gOld + x / gOld) / 2 with recursion
+    * x1 is gOld
+    * div is arg / x1
+     */
+    double estimationFormula(double x1, int arg)
+    {
+        double result = x1;
+        double result1 = 0.0;
+        double div = arg / x1;
 
-
+        result1 = (x1 + div) / 2;
+        if (Double.compare(result1, result) != 0) {
+            result = result1;
+            return estimationFormula(result1,  arg);
+        }
+        else return result;
     }
 
 }
