@@ -195,7 +195,7 @@ public class Task {
     double HerosMethod(double number) {
         double result = number / 2;
         double iterations = 100;
-        
+
         // The input will be iterated 25 times
         for (int i = 1; i <= iterations; i++) {
             result = (result + (number / result)) / 2.0;
