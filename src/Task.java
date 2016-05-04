@@ -196,9 +196,15 @@ public class Task {
         double result = number / 2;
 
         // The input will be iterated 25 times
-        while (result * result != number) {
+        for (int i = 1; i <= 25; i++) {
             result = (result + (number / result)) / 2.0;
         }
+
+        /*
+            while (result * result != number) {
+            result = (result + (number / result)) / 2.0;
+        }
+         */
         return result;
     }
 
