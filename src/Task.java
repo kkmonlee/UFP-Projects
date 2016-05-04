@@ -194,9 +194,10 @@ public class Task {
     // double number is the number from which we extract the square root
     double HerosMethod(double number) {
         double result = number / 2;
-
+        double iterations = 100;
+        
         // The input will be iterated 25 times
-        for (int i = 1; i <= 25; i++) {
+        for (int i = 1; i <= iterations; i++) {
             result = (result + (number / result)) / 2.0;
         }
 

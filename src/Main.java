@@ -8,7 +8,6 @@ public class Main {
 
         System.out.println("Enter the number you want the square root of: ");
         Scanner input = new Scanner(System.in);
-
         System.out.println(theTask.HerosMethod(input.nextDouble()));
 
     }
