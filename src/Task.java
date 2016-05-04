@@ -187,4 +187,37 @@ public class Task {
 
     }
 
+    void HerosMethod()
+    {
+        Scanner input = new Scanner(System.in);
+        final double epsilon = 1e-14; // amount of precision
+        double x;       // square root of x
+        double root;    // current estimate of sqrt(x)
+        double lroot;   // last estimate of sqrt(x)
+
+        // read x
+        do {
+            System.out.println("Enter the number: ");
+            x = input.nextDouble();
+
+            if (x < 0) {
+                System.out.println("No real results.\n");
+                System.out.println("Please enter a positive number. \n");
+            }
+        } while (x < 0);
+
+        // Hero's Method
+        root = 3.0; lroot = x;
+
+        while (Math.abs(root - lroot) > epsilon) {
+            lroot = root;
+            root = (root + x / root) / 2.0;
+        }
+
+        System.out.println("Square root of x = " + root + "\n");
+        System.out.println("Math.sqrt(x) = " + Math.sqrt(x));
+
+
+    }
+
 }

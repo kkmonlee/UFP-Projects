@@ -6,7 +6,7 @@ public class Main {
 
         Task theTask = new Task();
 
-        theTask.PlanetWeight();
+        theTask.HerosMethod();
 
     }
 }
