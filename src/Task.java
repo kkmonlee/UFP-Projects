@@ -192,21 +192,47 @@ public class Task {
 
     // Makes a root calculator for a given number
     // double number is the number from which we extract the square root
-    double HerosMethod(double number) {
-        double result = number / 2;
-        double iterations = 100;
+    void HerosMethod()
+    {
+        Scanner input = new Scanner(System.in);
+        final double epsilon = 1e-7; // amount of precision
+        double guess;       // first guess of value
+        //double root;    // current estimate of sqrt(x)
+        //double lroot;   // last estimate of sqrt(x)
+        double value;   // number of which we're trying to find the sqrt
 
-        // The input will be iterated 25 times
-        for (int i = 1; i <= iterations; i++) {
-            result = (result + (number / result)) / 2.0;
+        // read x
+        do {
+            System.out.println("Enter the number: ");
+            value = input.nextDouble();
+
+
+            if (value < 0) {
+                System.out.println("No real results.\n");
+                System.out.println("Please enter a positive number. \n");
+            }
+        } while (value < 0);
+
+        System.out.println("Enter your first guess of the root: \n");
+        guess = input.nextDouble();
+
+        // Hero's Method
+        int iterations = 0;
+
+        while (Math.abs((guess * guess) - value) > epsilon) {
+
+
+            guess = (guess + (value / guess)) / 2.0;
+            iterations++;
         }
 
-        /*
-            while (result * result != number) {
-            result = (result + (number / result)) / 2.0;
-        }
-         */
-        return result;
+        System.out.printf("Square root of " + value + " is %.2f \n", guess);
+
+        System.out.println("This value has been iterated " + iterations + " amounts of times.");
+
+        System.out.println("Math.sqrt(value) = " + Math.sqrt(value));
+
+
     }
 
 }
