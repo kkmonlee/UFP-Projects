@@ -1,8 +1,9 @@
 /**
  * Created by Atul Anand Sinha on 04 May 2016.
  */
-import java.util.Scanner;
+
 import java.text.DecimalFormat;
+import java.util.Scanner;
 
 /**
  *
@@ -234,5 +235,18 @@ public class Task {
 
 
     }
+
+    int searchInt(int [] numbers, int searchItem)
+    {
+        for (int i = 0; i < numbers.length; i++) {
+            if (numbers[i] == searchItem) {
+                return i;
+
+            }
+        }
+
+        return -1;
+    }
+
 
 }
