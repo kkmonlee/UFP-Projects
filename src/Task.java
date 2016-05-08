@@ -252,7 +252,7 @@ public class Task {
 
         if (found)
         {
-            System.out.println("Integer was found at position " + i);
+            System.out.println("Integer was found at position " + i + 1);
         }
         else
         {
