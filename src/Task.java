@@ -236,17 +236,28 @@ public class Task {
 
     }
 
-    int searchInt(int [] numbers, int searchItem)
+    void integerSearch(int [] intArray, int searchFor)
     {
-        for (int i = 0; i < numbers.length; i++) {
-            if (numbers[i] == searchItem) {
-                return i;
+        int i = 0;                  // index
+        boolean found = false;      // setting boolean value to false until search item is found
 
+        for (i = 0; i < intArray.length; i++)
+        {
+            if (intArray[i] == searchFor)
+            {
+                found = true;
+                break;
             }
         }
 
-        return -1;
+        if (found)
+        {
+            System.out.println("Integer was found at position " + i);
+        }
+        else
+        {
+            System.out.println(searchFor + " was not found in the array.");
+        }
     }
-
 
 }
