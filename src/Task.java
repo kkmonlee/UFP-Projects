@@ -3,6 +3,7 @@
  */
 
 import java.text.DecimalFormat;
+import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -260,6 +261,18 @@ public class Task {
         {
             System.out.println(searchFor + " was not found in the array.");
         }
+    }
+
+    void integerSort(int [] intArray)
+    {
+        int i;      // index
+        Arrays.sort(intArray);
+
+        for (i = 0; i < intArray.length; i++)
+        {
+            System.out.println("next int: " + intArray[i] + "\n");
+        }
+
     }
 
 }
