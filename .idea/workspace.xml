@@ -33,7 +33,9 @@
     </treeState>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7a1071b8-bd72-4e5d-91dd-d0ef85dcddcc" name="Default" comment="integerSort() without Arrays.sort() implementation (doesn't work)">
+    <list default="true" id="7a1071b8-bd72-4e5d-91dd-d0ef85dcddcc" name="Default" comment="Working implementation of Bubble Sort. &#10;Changed method name to bubbleSort() from integerSort().">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UFP Projects/Main.class" afterPath="$PROJECT_DIR$/out/production/UFP Projects/Main.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UFP Projects/Task.class" afterPath="$PROJECT_DIR$/out/production/UFP Projects/Task.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Task.java" afterPath="$PROJECT_DIR$/src/Task.java" />
@@ -59,21 +61,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="43" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
+            <state relative-caret-position="153">
+              <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Task.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Task.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Task.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="264" column="19" selection-start-line="264" selection-start-column="19" selection-end-line="264" selection-end-column="19" />
+            <state relative-caret-position="599">
+              <caret line="313" column="17" selection-start-line="313" selection-start-column="17" selection-end-line="313" selection-end-column="17" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -84,6 +86,7 @@
                 <element signature="method#PlanetWeight#0;class#Task#0" expanded="false" />
                 <element signature="method#HerosMethod#0;class#Task#0" expanded="false" />
                 <element signature="method#integerSearch#0;class#Task#0" expanded="false" />
+                <element signature="method#bubbleSort#0;class#Task#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -109,8 +112,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Task.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/Task.java" />
       </list>
     </option>
   </component>
@@ -984,7 +987,7 @@
       <updated>1462383556661</updated>
       <workItem from="1462383560376" duration="6912000" />
       <workItem from="1462559019081" duration="1706000" />
-      <workItem from="1462729565036" duration="2908000" />
+      <workItem from="1462729565036" duration="4371000" />
     </task>
     <task id="LOCAL-00001" summary="Final changes to HerosMethod()">
       <created>1462559162280</created>
@@ -1042,11 +1045,18 @@
       <option name="project" value="LOCAL" />
       <updated>1462732100818</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Working implementation of Bubble Sort. &#10;Changed method name to bubbleSort() from integerSort().">
+      <created>1462732510102</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1462732510102</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11526000" />
+    <option name="totallyTimeSpent" value="12989000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1109,7 +1119,8 @@
     <MESSAGE value="Added a few comments" />
     <MESSAGE value="Implemented integerSort() although uses Arrays.sort()" />
     <MESSAGE value="integerSort() without Arrays.sort() implementation (doesn't work)" />
-    <option name="LAST_COMMIT_MESSAGE" value="integerSort() without Arrays.sort() implementation (doesn't work)" />
+    <MESSAGE value="Working implementation of Bubble Sort. &#10;Changed method name to bubbleSort() from integerSort()." />
+    <option name="LAST_COMMIT_MESSAGE" value="Working implementation of Bubble Sort. &#10;Changed method name to bubbleSort() from integerSort()." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1145,6 +1156,7 @@
             <element signature="method#PlanetWeight#0;class#Task#0" expanded="false" />
             <element signature="method#HerosMethod#0;class#Task#0" expanded="false" />
             <element signature="method#integerSearch#0;class#Task#0" expanded="false" />
+            <element signature="method#bubbleSort#0;class#Task#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1179,6 +1191,7 @@
             <element signature="method#PlanetWeight#0;class#Task#0" expanded="false" />
             <element signature="method#HerosMethod#0;class#Task#0" expanded="false" />
             <element signature="method#integerSearch#0;class#Task#0" expanded="false" />
+            <element signature="method#bubbleSort#0;class#Task#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1199,10 +1212,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Task.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="264" column="19" selection-start-line="264" selection-start-column="19" selection-end-line="264" selection-end-column="19" />
+        <state relative-caret-position="599">
+          <caret line="313" column="17" selection-start-line="313" selection-start-column="17" selection-end-line="313" selection-end-column="17" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
@@ -1213,15 +1234,8 @@
             <element signature="method#PlanetWeight#0;class#Task#0" expanded="false" />
             <element signature="method#HerosMethod#0;class#Task#0" expanded="false" />
             <element signature="method#integerSearch#0;class#Task#0" expanded="false" />
+            <element signature="method#bubbleSort#0;class#Task#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="43" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>

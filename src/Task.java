@@ -285,4 +285,41 @@ public class Task {
         }
     }
 
+    void denaryToBinary()
+    {
+        System.out.println("Enter the number you want to convert to binary: \n");
+        int userNumber = userInput.nextInt();
+
+        // If the input is negative or exceeds 255 then print error
+        if (userNumber > 255 || userNumber < 0)
+        {
+            System.out.println("Integer is either negative or too big. \n");
+        }
+        else {
+            String binary = "";         // This is the string representation of a binary number
+
+            // We need i < 8 because the number must be 8 digits long
+            for (int i = 0; i < 8; i++) {
+                // If the remainder of userNumber when divided by 2 is equal to 1, then add "1" to the binary String
+                if (userNumber % 2 == 1)
+                {
+                    binary = '1' + binary;  // Adding a character "1" to String binary
+                }
+
+                // If remainder of userNumber when divided by 2 is 0, that implies that it is divisible by 2
+                // therefore we add "0"
+                if (userNumber % 2 == 0)
+                {
+                    binary = '0' + binary;
+                }
+
+                userNumber = userNumber / 2;
+
+                System.out.println("Binary equivalent is: " + binary);
+            }
+
+        }
+
+
+    }
 }

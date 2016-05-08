@@ -7,7 +7,7 @@ public class Main {
         int[] anArray = new int[]{5, 5, 2, 123, 12};
         // int searchItem = 345;
 
-        theTask.bubbleSort(anArray);
+        theTask.denaryToBinary();
 
 
     }
