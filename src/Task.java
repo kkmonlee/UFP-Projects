@@ -241,6 +241,7 @@ public class Task {
         int i = 0;                  // index
         boolean found = false;      // setting boolean value to false until search item is found
 
+        // Searches for integer (searchFor) i < intArray.length number of times
         for (i = 0; i < intArray.length; i++)
         {
             if (intArray[i] == searchFor)
@@ -250,6 +251,7 @@ public class Task {
             }
         }
 
+        // If found, system will print its position.
         if (found)
         {
             System.out.println("Integer was found at position " + i + 1);

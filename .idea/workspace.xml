@@ -33,7 +33,7 @@
     </treeState>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7a1071b8-bd72-4e5d-91dd-d0ef85dcddcc" name="Default" comment="Working solution for integerSearch()">
+    <list default="true" id="7a1071b8-bd72-4e5d-91dd-d0ef85dcddcc" name="Default" comment="Changed i to (i + 1) since elements have zeroth position">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Task.java" afterPath="$PROJECT_DIR$/src/Task.java" />
     </list>
@@ -71,8 +71,8 @@
       <file leaf-file-name="Task.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Task.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="548">
-              <caret line="254" column="71" selection-start-line="254" selection-start-column="71" selection-end-line="254" selection-end-column="71" />
+            <state relative-caret-position="513">
+              <caret line="253" column="52" selection-start-line="253" selection-start-column="52" selection-end-line="253" selection-end-column="52" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -992,7 +992,7 @@
       <updated>1462383556661</updated>
       <workItem from="1462383560376" duration="6912000" />
       <workItem from="1462559019081" duration="1706000" />
-      <workItem from="1462729565036" duration="1120000" />
+      <workItem from="1462729565036" duration="1448000" />
     </task>
     <task id="LOCAL-00001" summary="Final changes to HerosMethod()">
       <created>1462559162280</created>
@@ -1022,11 +1022,18 @@
       <option name="project" value="LOCAL" />
       <updated>1462730628756</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Changed i to (i + 1) since elements have zeroth position">
+      <created>1462730712166</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1462730712166</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9738000" />
+    <option name="totallyTimeSpent" value="10066000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1085,12 +1092,13 @@
     <MESSAGE value="Final changes" />
     <MESSAGE value="First attempt at searchInt method" />
     <MESSAGE value="Working solution for integerSearch()" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working solution for integerSearch()" />
+    <MESSAGE value="Changed i to (i + 1) since elements have zeroth position" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed i to (i + 1) since elements have zeroth position" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1183,8 +1191,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Task.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="548">
-          <caret line="254" column="71" selection-start-line="254" selection-start-column="71" selection-end-line="254" selection-end-column="71" />
+        <state relative-caret-position="513">
+          <caret line="253" column="52" selection-start-line="253" selection-start-column="52" selection-end-line="253" selection-end-column="52" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
