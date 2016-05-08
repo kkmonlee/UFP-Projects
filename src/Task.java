@@ -3,7 +3,6 @@
  */
 
 import java.text.DecimalFormat;
-import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -266,13 +265,28 @@ public class Task {
     void integerSort(int [] intArray)
     {
         int i;      // index
-        Arrays.sort(intArray);
+        int j;      // index 2
+        int temp;   // temporary placeholder for swapping numbers
 
         for (i = 0; i < intArray.length; i++)
         {
-            System.out.println("next int: " + intArray[i] + "\n");
+            for (j = i + 1; i < intArray.length; j++)
+            {
+                if (intArray[i] > intArray[j])
+                {
+                    temp = intArray[i];
+                    intArray[i] = intArray[j];
+                    intArray[j] = temp;
+                }
+            }
         }
 
+        System.out.print("Printing numbers in ascending order: \n");
+        for (i = 0; i < intArray.length - 1; i++)
+        {
+            System.out.print(intArray[i] + ", \n");
+        }
+        System.out.print(intArray[intArray.length - 1]);
     }
 
 }

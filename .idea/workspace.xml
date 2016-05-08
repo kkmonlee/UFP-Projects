@@ -33,11 +33,9 @@
     </treeState>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7a1071b8-bd72-4e5d-91dd-d0ef85dcddcc" name="Default" comment="Added a few comments">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UFP Projects/Main.class" afterPath="$PROJECT_DIR$/out/production/UFP Projects/Main.class" />
+    <list default="true" id="7a1071b8-bd72-4e5d-91dd-d0ef85dcddcc" name="Default" comment="Implemented integerSort() although uses Arrays.sort()">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UFP Projects/Task.class" afterPath="$PROJECT_DIR$/out/production/UFP Projects/Task.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Task.java" afterPath="$PROJECT_DIR$/src/Task.java" />
     </list>
     <ignored path="UFP Projects.iws" />
@@ -65,7 +63,7 @@
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -74,8 +72,8 @@
       <file leaf-file-name="Task.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Task.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="548">
-              <caret line="263" column="5" selection-start-line="263" selection-start-column="5" selection-end-line="263" selection-end-column="5" />
+            <state relative-caret-position="752">
+              <caret line="290" column="5" selection-start-line="290" selection-start-column="5" selection-end-line="290" selection-end-column="5" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -87,16 +85,6 @@
                 <element signature="method#HerosMethod#0;class#Task#0" expanded="false" />
                 <element signature="method#integerSearch#0;class#Task#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UFP Projects.iml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/UFP Projects.iml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -121,8 +109,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Task.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/Task.java" />
       </list>
     </option>
   </component>
@@ -996,7 +984,7 @@
       <updated>1462383556661</updated>
       <workItem from="1462383560376" duration="6912000" />
       <workItem from="1462559019081" duration="1706000" />
-      <workItem from="1462729565036" duration="1880000" />
+      <workItem from="1462729565036" duration="2510000" />
     </task>
     <task id="LOCAL-00001" summary="Final changes to HerosMethod()">
       <created>1462559162280</created>
@@ -1040,11 +1028,18 @@
       <option name="project" value="LOCAL" />
       <updated>1462731025509</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Implemented integerSort() although uses Arrays.sort()">
+      <created>1462731482255</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1462731482255</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10498000" />
+    <option name="totallyTimeSpent" value="11128000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1105,7 +1100,8 @@
     <MESSAGE value="Working solution for integerSearch()" />
     <MESSAGE value="Changed i to (i + 1) since elements have zeroth position" />
     <MESSAGE value="Added a few comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a few comments" />
+    <MESSAGE value="Implemented integerSort() although uses Arrays.sort()" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented integerSort() although uses Arrays.sort()" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1198,15 +1194,15 @@
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Task.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="548">
-          <caret line="263" column="5" selection-start-line="263" selection-start-column="5" selection-end-line="263" selection-end-column="5" />
+        <state relative-caret-position="752">
+          <caret line="290" column="5" selection-start-line="290" selection-start-column="5" selection-end-line="290" selection-end-column="5" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
