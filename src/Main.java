@@ -4,10 +4,10 @@ public class Main {
 
         Task theTask = new Task();
 
-        int[] anArray = new int[]{3, 132, 312, 345, 4};
+        int[] anArray = new int[]{5, 5, 2, 123, 12};
         // int searchItem = 345;
 
-        theTask.integerSort(anArray);
+        theTask.bubbleSort(anArray);
 
 
     }

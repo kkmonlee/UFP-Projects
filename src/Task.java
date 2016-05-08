@@ -262,18 +262,16 @@ public class Task {
         }
     }
 
-    void integerSort(int [] intArray)
+    void bubbleSort(int [] intArray)
     {
         int i;      // index
         int j;      // index 2
-        int temp;   // temporary placeholder for swapping numbers
 
-        for (i = 0; i < intArray.length; i++)
-        {
-            for (j = i + 1; i < intArray.length; j++)
-            {
-                if (intArray[i] > intArray[j])
-                {
+
+        for (i = 0; i < intArray.length; i++) {
+            for (j = i + 1; j   < intArray.length; j++) {
+                int temp = 0;   // temporary placeholder for swapping numbers
+                if (intArray[i] > intArray[j]) {
                     temp = intArray[i];
                     intArray[i] = intArray[j];
                     intArray[j] = temp;
@@ -282,11 +280,9 @@ public class Task {
         }
 
         System.out.print("Printing numbers in ascending order: \n");
-        for (i = 0; i < intArray.length - 1; i++)
-        {
-            System.out.print(intArray[i] + ", \n");
+        for (i = 0; i < intArray.length - 1; i++) {
+            System.out.print(intArray[i] + "\n");
         }
-        System.out.print(intArray[intArray.length - 1]);
     }
 
 }
