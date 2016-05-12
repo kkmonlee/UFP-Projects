@@ -13,6 +13,7 @@ public class Task {
 
     // attributes
     Scanner userInput;
+    int store[] = new int[]{1, 2, 3, 4, 5};
 
     // This is a special method called a constructor
     // It is called when the object is created
@@ -227,7 +228,7 @@ public class Task {
             iterations++;
         }
 
-        System.out.printf("Square root of " + value + " is %.2f \n", guess);
+        System.out.printf("Square root of " + value + " is %5.2f \n", guess);
 
         System.out.println("This value has been iterated " + iterations + " amounts of times.");
 
@@ -236,55 +237,110 @@ public class Task {
 
     }
 
-    void integerSearch(int [] intArray, int searchFor)
+    // Making intSearch() method more global and reusable
+    void doSearch() {
+        int searchTerm;
+        System.out.println(store.length);
+        searchTerm = getInteger("Please enter a number: \n");
+
+        if (intSearch(store, searchTerm)) {
+            System.out.println("Integer was found. \n");
+        } else {
+            System.out.println(searchTerm + " was not found in the array.\n");
+        }
+
+    }
+
+    boolean intSearch(int [] intArray, int searchFor)
     {
         int i = 0;                  // index
         boolean found = false;      // setting boolean value to false until search item is found
 
-        // Searches for integer (searchFor) i < intArray.length number of times
-        for (i = 0; i < intArray.length; i++)
-        {
-            if (intArray[i] == searchFor)
-            {
-                found = true;
-                break;
-            }
-        }
+        // searches for integer searchFor while boolean remains false
+        // and while i is smaller than array's length
 
-        // If found, system will print its position.
-        if (found)
-        {
-            System.out.println("Integer was found at position " + i + 1);
-        }
-        else
-        {
-            System.out.println(searchFor + " was not found in the array.");
-        }
+        do {
+            if (intArray[i] == searchFor) {
+                found = true;
+            }
+
+            i++;
+            System.out.print(i + " ");
+        } while (!found && i < intArray.length);
+
+        return found;
     }
 
-    void bubbleSort(int [] intArray)
-    {
-        int i;      // index
-        int j;      // index 2
+    // Making bubbleSort() method more usable
+    void doSort() {
+        bubbleSort(store);
+    }
 
+    // My version of Bubble Sort
+    void bubbleSort(int[] intArray) {
+        int i;                  // index
+        int j;                  // index 2
+        int numSwaps = 0;       // number of swaps
+        int numCompares = 0;    // number of comparisions
 
         for (i = 0; i < intArray.length; i++) {
-            for (j = i + 1; j   < intArray.length; j++) {
+            for (j = i + 1; j < intArray.length; j++) {
                 int temp = 0;   // temporary placeholder for swapping numbers
                 if (intArray[i] > intArray[j]) {
                     temp = intArray[i];
                     intArray[i] = intArray[j];
                     intArray[j] = temp;
+
+                    numSwaps++;
                 }
+
+                numCompares++;
             }
         }
 
         System.out.print("Printing numbers in ascending order: \n");
-        for (i = 0; i < intArray.length - 1; i++) {
+        for (i = 0; i < intArray.length; i++) {
             System.out.print(intArray[i] + "\n");
         }
+        System.out.print("Number of swaps: " + numSwaps + "\n");
+        System.out.print("Number of comparisions: " + numCompares + "\n");
     }
 
+    // Dr Mulvey's version of Bubble Sort
+    void bubbleSort2(int[] intArray) {
+        int i;                  // index
+        int j;                  // index 2
+        int numSwaps = 0;       // number of swaps
+        int numCompares = 0;    // number of comparisions
+        int length = intArray.length;
+        boolean swapped = false;
+
+        do {
+            swapped = false;
+            for (j = 0; j < length - 1; j++) {
+                int temp = 0;   // temporary placeholder for swapping numbers
+                if (intArray[j] > intArray[j + 1]) {
+                    temp = intArray[j];
+                    intArray[j] = intArray[j + 1];
+                    intArray[j + 1] = temp;
+                    swapped = true;
+
+                    numSwaps++;
+                }
+                numCompares++;
+            }
+            length--;
+        } while (swapped);
+
+        System.out.print("Printing numbers in ascending order: \n");
+        for (i = 0; i < intArray.length; i++) {
+            System.out.print(intArray[i] + "\n");
+        }
+        System.out.print("Number of swaps: " + numSwaps + "\n");
+        System.out.print("Number of comparisions: " + numCompares + "\n");
+    }
+
+    // When decimal entered, output's the binary equivalent of the integer
     void denaryToBinary()
     {
         System.out.println("Enter the number you want to convert to binary: \n");
