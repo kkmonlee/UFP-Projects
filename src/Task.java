@@ -378,21 +378,24 @@ public class Task {
     }
 
     void binaryToDenary() {
-        int x = 128;            //
-        int total = 0;          // will store added successive values
-
         String input = getText("Please enter a binary number: \n");
+        final int base = 2;     // we're working in base 2
+        int decimalNumber = 0;
 
+        for (int i = 0; i < input.length(); i++) {
 
-        for (int i = 0; i < 8; i++) {
+            if (input.charAt(i) == '0') {
+                // multiply by 0
+                decimalNumber += 0 * Math.pow(base, input.length() - i - 1);
+            } else if (input.charAt(i) == '1') {
 
-            if (input.charAt(i) == '1') {
-                total = total + (x * 1);
+                decimalNumber += 1 * Math.pow(base, input.length() - i - 1);
+            } else {
+                System.out.println("Please enter only 1's and 0's");
             }
-
-            x = x / 2;
-
         }
-        System.out.println("Denary equivalent is: " +  total);
+
+        System.out.println("Decimal equivalent is: " + decimalNumber + "\n");
+
     }
 }
