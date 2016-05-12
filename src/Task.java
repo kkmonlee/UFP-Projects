@@ -375,7 +375,24 @@ public class Task {
             }
 
         }
+    }
+
+    void binaryToDenary() {
+        int x = 128;            //
+        int total = 0;          // will store added successive values
+
+        String input = getText("Please enter a binary number: \n");
 
 
+        for (int i = 0; i < 8; i++) {
+
+            if (input.charAt(i) == '1') {
+                total = total + (x * 1);
+            }
+
+            x = x / 2;
+
+        }
+        System.out.println("Denary equivalent is: " +  total);
     }
 }

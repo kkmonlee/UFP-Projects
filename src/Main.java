@@ -7,7 +7,7 @@ public class Main {
 
 
 
-        theTask.denaryToBinary();
+        theTask.binaryToDenary();
 
 
     }
