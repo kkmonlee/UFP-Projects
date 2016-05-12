@@ -33,9 +33,7 @@
     </treeState>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7a1071b8-bd72-4e5d-91dd-d0ef85dcddcc" name="Default" comment="Failed attempt at binary to int">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UFP Projects/Main.class" afterPath="$PROJECT_DIR$/out/production/UFP Projects/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UFP Projects/Task.class" afterPath="$PROJECT_DIR$/out/production/UFP Projects/Task.class" />
+    <list default="true" id="7a1071b8-bd72-4e5d-91dd-d0ef85dcddcc" name="Default" comment="Working implementation of decimal to binary&#10;&#10;Still working on a more efficient way">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Task.java" afterPath="$PROJECT_DIR$/src/Task.java" />
     </list>
@@ -73,8 +71,8 @@
       <file leaf-file-name="Task.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Task.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
-              <caret line="378" column="0" selection-start-line="378" selection-start-column="0" selection-end-line="378" selection-end-column="0" />
+            <state relative-caret-position="667">
+              <caret line="390" column="0" selection-start-line="390" selection-start-column="0" selection-end-line="390" selection-end-column="0" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -990,7 +988,7 @@
       <workItem from="1462729565036" duration="5007000" />
       <workItem from="1463085759615" duration="312000" />
       <workItem from="1463086165830" duration="76000" />
-      <workItem from="1463086263971" duration="3660000" />
+      <workItem from="1463086263971" duration="4706000" />
     </task>
     <task id="LOCAL-00001" summary="Final changes to HerosMethod()">
       <created>1462559162280</created>
@@ -1076,11 +1074,18 @@
       <option name="project" value="LOCAL" />
       <updated>1463088765006</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Working implementation of decimal to binary&#10;&#10;Still working on a more efficient way">
+      <created>1463089950484</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1463089950484</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17673000" />
+    <option name="totallyTimeSpent" value="18719000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1147,7 +1152,8 @@
     <MESSAGE value="Working solution for denary to binary converter." />
     <MESSAGE value="Making methods more globalised and reusable&#10;&#10;Added comments, fixed stuff." />
     <MESSAGE value="Failed attempt at binary to int" />
-    <option name="LAST_COMMIT_MESSAGE" value="Failed attempt at binary to int" />
+    <MESSAGE value="Working implementation of decimal to binary&#10;&#10;Still working on a more efficient way" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working implementation of decimal to binary&#10;&#10;Still working on a more efficient way" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1322,8 +1328,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Task.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="378" column="0" selection-start-line="378" selection-start-column="0" selection-end-line="378" selection-end-column="0" />
+        <state relative-caret-position="667">
+          <caret line="390" column="0" selection-start-line="390" selection-start-column="0" selection-end-line="390" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
