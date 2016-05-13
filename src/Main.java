@@ -4,6 +4,6 @@ public class Main {
 
         Task theTask = new Task();
 
-        theTask.doHexToBin();
+        theTask.printHex();
     }
 }
