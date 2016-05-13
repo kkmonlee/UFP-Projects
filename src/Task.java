@@ -377,7 +377,7 @@ public class Task {
         }
     }
 
-    void binaryToDenary() {
+    int binaryToDenary() {
         String input = getText("Please enter a binary number: \n");
 
         int x = 128;        // maximum value of the first bit
@@ -393,7 +393,7 @@ public class Task {
         }
 
         System.out.println("Equivalent: " + total);
-
+        return total;
     }
 
     void doHex() {
@@ -402,17 +402,59 @@ public class Task {
     }
 
     int hexToBinary(String hex) {
-        final String hexRepresentations = "0123456789ABCDEF";
+        final String digits = "0123456789ABCDEF";
 
         int counter = hex.length() - 1;
         int sum = 0;
 
         for (char c : hex.toCharArray()) {
-            int i = hexRepresentations.indexOf(c);
+            int i = digits.indexOf(c);
             sum = (int) (sum + (Math.pow(16, counter)) * i);
             counter--;
         }
 
         return sum;
+    }
+
+    void binaryToHex() {
+        int decimalResult = binaryToDenary();
+        System.out.println(denaryToHex(decimalResult));
+    }
+
+    void printHex() {
+        int input = getInteger("Enter a denary number you want converted to hexa: \n");
+        System.out.println(denaryToHex(input));
+    }
+
+    String denaryToHex(int decimal) {
+        final char[] hexDigits = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
+        String hex = "";
+
+        while (decimal != 0) {
+            int remainder = decimal % 16;
+            hex = hexDigits[remainder] + hex;
+            decimal = decimal / 16;
+        }
+        return hex;
+    }
+
+    void printDenary() {
+        String input = getText("Enter a hexadecimal that you want converted to denary: \n");
+        System.out.println(hexToDenary(input));
+    }
+    int hexToDenary(String hex) {
+        final String digits = "0123456789ABCDEF";
+        hex = hex.toUpperCase();
+        int value = 0;
+        int i = 0;
+        do {
+            char c = hex.charAt(i);
+            int d = digits.indexOf(c);
+            value = 16 * value + d;
+
+            i++;
+        } while (i < hex.length());
+
+        return value;
     }
 }
