@@ -4,11 +4,6 @@ public class Main {
 
         Task theTask = new Task();
 
-
-
-
-        theTask.binaryToDenary();
-
-
+        theTask.doHexToBin();
     }
 }
