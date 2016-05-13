@@ -396,36 +396,23 @@ public class Task {
 
     }
 
-    void doHexToBin() {
-        String hexadecimal;
-        int decnum, i = 1, j;
-        int binnum[] = new int[100];
-        hexadecimal = getText("Enter a hexadecimal number: \n");
-
-        decnum = hexToBinary(hexadecimal);
-
-        while (decnum != 0) {
-            binnum[i++] = decnum % 2;
-        }
-
-        System.out.print("Equivalent binary is: \n");
-
-        for (j = i - 1; j > 0; j--) {
-            System.out.print(binnum[j]);
-        }
+    void doHex() {
+        String input = getText("Enter a hexadecimal number: \n").toUpperCase();
+        System.out.println(hexToBinary(input) + "\n");
     }
 
-    int hexToBinary(String s) {
-        String digits = "0123456789ABCDEF";
-        s = s.toUpperCase();
+    int hexToBinary(String hex) {
+        final String hexRepresentations = "0123456789ABCDEF";
 
-        int value = 0;
+        int counter = hex.length() - 1;
+        int sum = 0;
 
-        for (int i = 0; i < s.length(); i++) {
-            char c = s.charAt(i);
-            int d = digits.indexOf(c);
-            value = 16 * value + d;
+        for (char c : hex.toCharArray()) {
+            int i = hexRepresentations.indexOf(c);
+            sum = (int) (sum + (Math.pow(16, counter)) * i);
+            counter--;
         }
-        return value;
+
+        return sum;
     }
 }
