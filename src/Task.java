@@ -377,6 +377,7 @@ public class Task {
         }
     }
 
+    // Converts binary to decimal
     int binaryToDenary() {
         String input = getText("Please enter a binary number: \n");
 
@@ -396,11 +397,13 @@ public class Task {
         return total;
     }
 
+    // Prints the hexa to binary output
     void doHex() {
         String input = getText("Enter a hexadecimal number: \n").toUpperCase();
         System.out.println(hexToBinary(input) + "\n");
     }
 
+    // Converts hexadecimal to binary
     int hexToBinary(String hex) {
         final String digits = "0123456789ABCDEF";
 
@@ -416,16 +419,19 @@ public class Task {
         return sum;
     }
 
+    // Prints the decimal to hexa output
     void binaryToHex() {
         int decimalResult = binaryToDenary();
         System.out.println(denaryToHex(decimalResult));
     }
 
+    // Prints the decimal to hexa output
     void printHex() {
         int input = getInteger("Enter a denary number you want converted to hexa: \n");
         System.out.println(denaryToHex(input));
     }
 
+    // Changes decimal to hexadecimal
     String denaryToHex(int decimal) {
         final char[] hexDigits = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
         String hex = "";
@@ -442,6 +448,8 @@ public class Task {
         String input = getText("Enter a hexadecimal that you want converted to denary: \n");
         System.out.println(hexToDenary(input));
     }
+
+    // Changes hexadecimal to decimal
     int hexToDenary(String hex) {
         final String digits = "0123456789ABCDEF";
         hex = hex.toUpperCase();
